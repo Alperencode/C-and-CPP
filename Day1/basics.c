@@ -15,7 +15,7 @@ int main()
 
 */
     const int x = 5;                // 'const' once declared, they cannot be changed 
-    char hw[11]= "Hello World!";
+    char hw[13]= "Hello World!";
     int local = 10;
     static int statik = 10;
     auto int automatic;
