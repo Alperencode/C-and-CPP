@@ -18,6 +18,7 @@ int main(){
 				bayrak = 1;
 				break;
 			}
+			
 		}	
 		
 		if(sayi == 1){
