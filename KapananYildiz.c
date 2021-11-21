@@ -2,20 +2,23 @@
 
 int main(){
 	
-	int j,k;
+	int satir,yildiz;
 	
-	for(j = 0; j<=14; j++){
+	for(satir = 0; satir<=14; satir++){
 			
-		if(j<7){
-			for(k = 0; k <= j; k++){
+		if(satir < 7){
+			
+			for(yildiz=0; yildiz<=satir; yildiz++){
 				printf("*");
 			}
 			printf("\n");
 		}else{
-			for(k=0; k<=14-j; k++){
+			for(yildiz=0; yildiz<=14-satir; yildiz++){
 				printf("*");
 			}
 			printf("\n");
+			
 		}
+		
 	}
 }

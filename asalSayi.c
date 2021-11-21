@@ -14,12 +14,13 @@ int main(){
 		
 		for(i=2; i <= sayi/2; i++){
 
-			if(sayi%i == 0){
-				bayrak = 1;
+			if(sayi%i == 0){  			// Bölünüyorsa
+				bayrak = 1; 			// Sayi asal deðil
 				break;
+			
 			}
 			
-		}	
+		}
 		
 		if(sayi == 1){
 			printf("1 sayisina asal sayi testi yapilmaz");
@@ -28,7 +29,7 @@ int main(){
 		}else{
 			printf("%d sayisi asal bir sayi degildir.",sayi);
 		}
-	
+		
 	}else{
 		printf("\n Pozitif bir sayi giriniz...");
 	}
