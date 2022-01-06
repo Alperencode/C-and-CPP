@@ -1,0 +1,6 @@
+Numara Isim Vize Final
+123 Ahmet 80 90
+124 Iclal 85 89
+125 Serdar 95 99
+156 Betul 19 32
+158 Alperen 12 43
