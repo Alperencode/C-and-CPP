@@ -12,10 +12,9 @@ int main(){
 
     for(k=0; k<giris; k++)
     {
-    	s = 0;
-    	while(s<bosluk){
-    		printf(" ");
-			s++;
+
+		for(s = 0; s < bosluk;s++){
+			printf(" ");
 		}	
     
         for(s=0; s<yildiz; s++)

@@ -8,8 +8,11 @@ int main(){
 	// Yazdýrmak istediðim dosya deðiþkenini oluþturuyorum "w" ile yazmak istediðimi belirtiyorum
 	FILE *dosya = fopen("dosya.txt","w");
 	
+	// w: write
+	// r: read
+	
 	// fprintf ile ilk önce yazmak istediðim dosyayý gösteriyorum sonra yazmak istediðim þeyi yazdýrýyorum
-	fprintf(dosya,"Alperen\nAga\n210205058");
+	fprintf(dosya,"Alperen\nAða\n210205058");
 	
 	// dosyayý kapatýyorum
 	fclose(dosya);

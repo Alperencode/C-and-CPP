@@ -6,9 +6,10 @@ int main(){
 	char satir[255];
 	int no,vize,final,toplam,counter;
 	double ortalama;
+	
 	fgets(satir,255,(FILE*)dosya);
 	printf("%s",satir);
-		
+	
 	while(!feof(dosya)){
 		fscanf(dosya,"%d",&no);
 		fscanf(dosya,"%s", satir);
