@@ -1,4 +1,4 @@
-<h1> Learning C</h1>
+<h1>C Repository</h1>
 <p>
 
 In this repository i'll learn and practice about C programming language.

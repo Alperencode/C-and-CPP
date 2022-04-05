@@ -1,7 +1,8 @@
 int strncat_ostim(char s1[], char s2[], int limit) 
 {
      // for döngüsü ile metini harf harf geziyor
-	 for (int i=0; i < limit; i++){
+	 int i;
+	 for (i=0; i < limit; i++){
 	 	
 	 	  // Karakterleri karþýlaþtýrýp geri döndürmesi gereken deðeri döndürüyor
           if (s1[i] < s2[i])
