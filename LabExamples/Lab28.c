@@ -16,7 +16,7 @@ int main(){
 	ogrenci ogr1;
 	
 	printf("Memleketinizi giriniz: ");
-	fgets(ogr1.memleket,sizeof(ogr1.memleket),stdin);
+	gets(ogr1.memleket);
 	
 	printf("\nOgrenci id giriniz: ");
 	scanf("%d",&ogr1.ogrenciid);
