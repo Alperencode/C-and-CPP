@@ -6,23 +6,23 @@ using namespace std;
 class kisi
 {
 	private:
-	   char kisiismi [20];
-	   char telefon[20];
+		char kisiismi [20];
+		char telefon[20];
 	public:
 		kisi();
 		kisi(char kisiismiata[20],char telefonata[20]);
-	   void atamayap(char kisiismiata[20],char telefonatat[20]);
-	   void yazdir(void);
+		void atamayap(char kisiismiata[20],char telefonatat[20]);
+		void yazdir(void);
 };
  
 kisi :: kisi(){
 	strcpy(telefon, "05397918214");
-    strcpy(kisiismi, "Alperen");
+	strcpy(kisiismi, "Alperen");
 };
 
 kisi :: kisi(char kisiismiata[20],char telefonata[20]){
 	strcpy(telefon, telefonata);
-    strcpy(kisiismi, kisiismiata);
+	strcpy(kisiismi, kisiismiata);
 };
 
 void kisi::yazdir(void)
@@ -33,8 +33,8 @@ void kisi::yazdir(void)
 
 void kisi::atamayap(char kisiismiata[20],char telefonata[20])
 {
-     strcpy(telefon, telefonata);
-     strcpy(kisiismi, kisiismiata);
+	strcpy(telefon, telefonata);
+	strcpy(kisiismi, kisiismiata);
 }
 
 
@@ -42,25 +42,25 @@ void kisi::atamayap(char kisiismiata[20],char telefonata[20])
 class dersler
 {
 	private:
-	   char dersismi [100];
-	   int derskodu;
-	   kisi dershocasi;
+		char dersismi [100];
+		int derskodu;
+		kisi dershocasi;
 	public:
-	   void derskoduata(int yeniderskodu);
-	   void dersismisata(char yenidersismi[20]);
-	   void dershocasiata(kisi dershocasiata);
-	   void yazdir(void);
+		void derskoduata(int yeniderskodu);
+		void dersismisata(char yenidersismi[20]);
+		void dershocasiata(kisi dershocasiata);
+		void yazdir(void);
 	   };
 
 
 void dersler::derskoduata(int yeniderskodu)
 {
-    derskodu = yeniderskodu;
+	derskodu = yeniderskodu;
 }
 
 void dersler::dersismisata(char yenidersiismi[])
 {
-     strcpy(dersismi, yenidersiismi);
+	strcpy(dersismi, yenidersiismi);
 }
 
 void dersler::dershocasiata(kisi dershocasiata)
@@ -70,19 +70,17 @@ void dersler::dershocasiata(kisi dershocasiata)
 
 void dersler::yazdir(void)
 {
-cout<<"-"<<dersismi<<"-"<<derskodu<<"\n";
-dershocasi.yazdir();
+	cout<<"-"<<dersismi<<"-"<<derskodu<<"\n";
+	dershocasi.yazdir();
 }
-
 
 
 int main(){
 
 kisi *kisi1 = new kisi();
-kisi *kisi2 = new kisi("Betül","05347494451");
+kisi *kisi2 = new kisi("Betï¿½l","05347494451");
 
 kisi1->yazdir();
 kisi2->yazdir();
 
 }
-
