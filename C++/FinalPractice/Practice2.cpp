@@ -8,18 +8,21 @@ class Person{
 	public:
 		string name,surname;
 		int age;
+		
 		void sayName(){
 			cout << "\nName: " << name;			
 		}
+		
 		void sayAge();
 	
 };
 
 void Person::sayAge(){
 	
-	cout << "\nAge: " << age;
+	cout << "\nAge:" << age;
 	
 }
+	
 
 int main(){
 	
@@ -31,6 +34,5 @@ int main(){
 	
 	human1.sayName();
 	human1.sayAge();
-
 	
 }

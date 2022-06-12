@@ -9,7 +9,9 @@ class Person{
 		string name,surname;
 		int age;
 		void sayName();
+		
 		Person(string);
+		
 		Person(){
 			name = "Alperen";
 			surname = "Aga"; 
@@ -21,6 +23,7 @@ class Person{
 Person::Person(string n){
 	
 	name = n;
+	cout << "Olusturuldu";
 	
 }
 
@@ -34,8 +37,5 @@ int main(){
 	
 	Person human1("Efe");
 	Person human2;
-	
-	human1.sayName();
-	human2.sayName();
 	
 }
