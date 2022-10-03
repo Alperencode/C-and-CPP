@@ -6,7 +6,7 @@ int main(){
 	
 	int arr[] = {63,21,53,68,47,58,99,24,11,52};
 	
-	int len = 10;
+	int len = sizeof(arr) / sizeof(int);
 	
 	printf("Unsorted array: ");
 	printArr(arr,len);
