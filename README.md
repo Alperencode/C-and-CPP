@@ -1,12 +1,22 @@
 # C and C++
 
-In this repository I'll practice about C and C++ programming languages. 
+## Repository Description 
+
+There will be my C and C++ programs in this repository. I'll finish Data-Structures and OOP in C++ and at the same time or after finishing these essentials, I'll learn more advanced usages in C++ and C.
 
 <br>
 
-## Repository Description 
+<h3>
 
-I'll push my C and C++ scripts and programs in this repository. They usually gonna be the exercises that my university provides and my programs to work for exams. (I just started cpp)
+- Currently
+
+    - Data-Structures (Here)
+    
+    - OOP    
+    
+    - Advanced C and C++
+
+</h3>
 
 <br>
 
