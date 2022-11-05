@@ -1,4 +1,4 @@
-// First example of Linked Lists (program written by my teacher)
+// First example of Linked Lists (program written by my professor)
 #include <stdio.h>
 #include <stdlib.h>
 
