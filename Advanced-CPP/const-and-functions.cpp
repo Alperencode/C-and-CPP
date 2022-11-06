@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define p(x) cout << x << endl;
+#define p(x) cout << x << endl;  // defining p(x) macro to print out variables
 
 class Dog{
 
@@ -13,55 +13,55 @@ class Dog{
             name = "Fluffy";
         }
 
-        // takes the parameter by reference
-        // but since its const it cannot be changed in this function
+        // CONST ARGUMENT
+        // its call by value method
+        // but since it takes variable as const 
+        // variable cannot be changed in this function
         void setAge(const int& a){
             age = a;
 
-            // error (since a is const)
-            // a++;
+            // a++;  // error (because `a` is const)
         }
 
-        // Returning const variable (by reference) 
-        // so 'name' cannot be changed by caller
+        // CONST RETURN VALUE
+        // Returning reference of string variable
+        // but since its returning const variable
+        // returning value cannot be change by caller
         const string& getName(){
             return name;
         }
 
-        // This functions cannot change any of class member
-        // It can only call const functions
+        // CONST FUNCTION
+        // This functions cannot change or use any of class member (variables and functions)
+        // It can only call const functions like itself
         void printName() const{
             cout << "const " + name << endl;
             
-            // error
-            // cout << getName();
-
-            // this functions will be called when dog is const
+            // cout << getName();  // error
         }
 
         // const functions can be used to overload the functions
+        // In this example this function below will be called when dog is not const
+        // Function above will be called when dog is const
         void printName(){
             cout << "not-const " + name << endl;
-            // this functions will be called when dog is not const
         }
 };
 
 int main(){
 	
-    Dog dog1;
-    const Dog dog2;
+    Dog dog1;  // not const
+    const Dog dog2;  // const
 
     int i = 9;
-
-    dog1.setAge(i);
+    dog1.setAge(i);  // takes reference but as const
     p(i);
 
-    const string& name = dog1.getName();
+    const string& name = dog1.getName();  // returning const reference
     p(name);
+    // name = "A";  // error (cannot change by caller)
 
-    dog1.printName();
-    dog2.printName();
+    dog1.printName();  // not const
+    dog2.printName();  // const
 	
-    // error (cannot change by caller)
-    // name = "A";
 }
