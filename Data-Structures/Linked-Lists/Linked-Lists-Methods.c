@@ -1,6 +1,4 @@
-// Linked Lists Inserting (I wrote this program)
-// It's creating a linked list
-// and inserting newNode in order to linked list
+// Linked List Methods Program
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -75,6 +73,7 @@ int main(){
 }
 
 void pushFront(int data){
+    // O(1) Operation
     node* temp = (node*)malloc(sizeof(node));
     temp->data = data;
     temp->next = head;
@@ -84,6 +83,7 @@ void pushFront(int data){
 }
 
 void pushBack(int data){
+    // O(1) Operation with tail
     node* temp = (node*)malloc(sizeof(node));
     temp->data = data;
     temp->next = NULL;
@@ -93,14 +93,17 @@ void pushBack(int data){
 }
 
 int topFront(){
+    // O(1) Operation
     return head->data;
 }
 
 int topBack(){
+    // O(1) Operation with tail
     return tail->data;
 }
 
 void popFront(){
+    // O(1) Operation
     if(head==NULL)
         return;
     node* temp = head;
@@ -109,6 +112,7 @@ void popFront(){
 }
 
 void popBack(){
+    // O(n) Operation
     node* iter = head;
     if(tail==NULL)
         return;
@@ -126,6 +130,8 @@ void popBack(){
 }
 
 void Erase(int data){
+    // O(n) Operation for worst case
+    // if data equals to head or tail its O(1)
     if(head->data == data){
         popFront();
         return;
@@ -146,6 +152,7 @@ void Erase(int data){
 }
 
 void printList(){
+    // O(n)
     node* temp = head;
     while(temp != NULL){
         printf("%d ", temp->data);
