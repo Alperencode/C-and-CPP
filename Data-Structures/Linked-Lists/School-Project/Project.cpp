@@ -26,9 +26,8 @@ int main(){
     ifstream myFile("grades.txt"); // using ifstream (input file stream)
  
     int flag = 0; // using flag to create head node
-    while(!myFile.eof()){
+    for (localNo; myFile >> localNo >> localGrade;){
         // reading values from myFile and assigning them to local variables
-        myFile >> localNo >> localGrade;
 
         if(flag!=0){
             // if head is created
