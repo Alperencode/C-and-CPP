@@ -1,37 +1,33 @@
-// Practicing insertion sort
+// Practicing insertion sort for exam
 #include <stdio.h>
-void insertion_sort(int *arr,int n);
-
+#define size 6
+void insertion_sort(int[],int);
 
 int main(){
 	
-	int n = 10;
-	int arr[] = {32,51,65,87,12,55,42,76,87,2};
+	int n = size;
+	int arr[] = {32,51,65,87,12,55};
 	
 	printf("Unsorted Array: ");
 	for(int i=0;i<n;i++) printf("%d ",arr[i]);
 	
-	insertion_sort(&arr,n);
+	insertion_sort(arr,n);
 	
 	printf("\nSorted Array: ");
 	for(int i=0;i<n;i++) printf("%d ",arr[i]);
 	
 }
 
-void insertion_sort(int *arr,int n){
+void insertion_sort(int arr[],int n){
+	int i,k,temp;
 	
-	int k,j,temp;
-	
-	for(int k=1;k<n;k++){
+	for(k=1; k<size; k++){
 		temp = arr[k];
-		j = k-1;
-		
-		while((temp<arr[j]) && (j>=0)){
-			arr[j+1] = arr[j];
-			j--;
+		i = k - 1;
+		while(i >= 0 && arr[i] > temp){
+			arr[i+1] = arr[i];
+			i--;
 		}
-		
-		arr[j+1] = temp;
-	}
-	
+		arr[i+1] = temp;
+	}	
 }
