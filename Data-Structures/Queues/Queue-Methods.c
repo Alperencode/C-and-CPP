@@ -1,15 +1,18 @@
-#include <iostream>
-using namespace std;
+// Queue Methods Program
+#include <stdio.h>
+#include <stdlib.h>
 
 // Methods
 void Enqueue(int);
 int Dequeue();
 void printList();
 
-struct node{
+struct n{
     int data;
-    struct node *next;
+    struct n *next;
 }*head,*tail,*newNode,*temp;
+
+typedef struct n node;
 
 int main(){
 
@@ -30,6 +33,7 @@ int main(){
             Enqueue(data);
             break;
         case 2:
+            if(head == NULL) break;
             printf("Element Dequeued: %d\n", Dequeue());
             break;
         default:
@@ -39,6 +43,7 @@ int main(){
         printList();
     }
     
+    return 0;
 }
 
 void Enqueue(int data){
@@ -67,7 +72,7 @@ int Dequeue(){
 }
 
 void printList(){
-    // O(n)
+    // O(n) Operation
     temp = head;
     while(temp != NULL){
         printf("%d ", temp->data);
