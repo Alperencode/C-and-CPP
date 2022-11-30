@@ -10,10 +10,10 @@ There will be my C and C++ programs in this repository. I'll finish Data-Structu
 
 - Currently
 
-    - Data-Structures (Here)
+    - OOP (done)
+
+    - Data-Structures (ongoing)
     
-    - OOP    
-    
-    - Advanced C and C++
+    - Advanced C and C++ (ongoing)
 
 </h3>
