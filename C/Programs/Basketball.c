@@ -1,89 +1,79 @@
+// This program made to help my friend's school project
+// So it was done simple on purpose
 #include <stdio.h>
 
 int main(){
 	
-	char menu[120] = "\n==== Menu ==== \nPota Seciniz\n1) Pota 1 (Kolay)\n2) Pota 2 (Orta)\n3) Pota 3 (Zor)\n4) Cikis\n\nSecim Yapiniz: ";
-	int secim,i,ihtimal,atis;
+	char menu[120] = "\n==== Menu ==== \nSelect Hoop\n1) Hoop 1 (Easy)\n2) Hoop 2 (Medium)\n3) Hoop 3 (Hard)\n4) Exit\n\nSelect: ";
+	int option, possibility, shootCounter, i;
 	
-	// Çýkýþ seçilmediði sürece döngü devam eder
-	while(secim != 4){
-		int basariliAtis = 0;  // Baþarýlý atýþ her oyunda sýfýrlanýr
+	while(option != 4){
+		int successfulShot = 0;
 		
-		printf("%s",menu);  // menü
-		scanf("%d", &secim);  // pota seçimi
+		printf("%s", menu);
+		scanf("%d", &option);
 		
-		switch(secim){
+		switch(option){
 			case 1:
-				printf("\nKac atis yapmak istersiniz: ");
-				scanf("%d", &atis);
-				
-				srand(time(NULL)); // random sayý üreticiyi sýfýrlýyoruz
-				
-				for(i=0; i<atis; i++){
-					ihtimal = rand() % 10; // 0-10 arasý sayý üretiyoruz
-					
+				printf("\nHow many shots do you want to take?: ");
+				scanf("%d", &shootCounter);
+
+				srand(time(NULL));
+
+				for(i=0; i<shootCounter; i++){
+					possibility = rand() % 10;
+
 					printf("\n%d. Atis: ", i+1);
-					if(ihtimal >= 3){
-						// %70 ihtimalle baþarýlý
-						printf("Basarili.");
-						basariliAtis++;
-					}else{
-						printf("Basarisiz.");
-					}
+					if(possibility >= 3){
+						printf("Success.");
+						successfulShot++;
+					}else
+						printf("Failed.");
 				}
-				
 				printf("\n");
 				break;
 				
 			case 2:
-				printf("\nKac atis yapmak istersiniz: ");
-				scanf("%d", &atis);
-				
+				printf("\nHow many shots do you want to take?: ");
+				scanf("%d", &shootCounter);
+
 				srand(time(NULL));
-				
-				for(i=0; i<atis; i++){
-					ihtimal = rand() % 10;
-					
+
+				for(i=0; i<shootCounter; i++){
+					possibility = rand() % 10;
+
 					printf("\n%d. Atis: ", i+1);
-					if(ihtimal >= 5){
-						// %50 ihtimalle baþarýlý
-						printf("Basarili.");
-						basariliAtis++;
-					}	
-					else{
-						printf("Basarisiz.");
-					}
+					if(possibility >= 5){
+						printf("Success.");
+						successfulShot++;
+					}else
+						printf("Failed.");
 				}
-				
 				printf("\n");
 				break;
 				
 			case 3:
-				printf("\nKac atis yapmak istersiniz: ");
-				scanf("%d", &atis);
-				
+				printf("\nHow many shots do you want to take?: ");
+				scanf("%d", &shootCounter);
+
 				srand(time(NULL));
-				
-				for(i=0; i<atis; i++){
-					ihtimal = rand() % 10;
-					
+
+				for(i=0; i<shootCounter; i++){
+					possibility = rand() % 10;
+
 					printf("\n%d. Atis: ", i+1);
-					if(ihtimal >= 7){
-						// %30 ihtimalle baþarýlý
-						printf("Basarili.");
-						basariliAtis++;
-					}else{
-						printf("Basarisiz.");
-					}
+					if(possibility >= 7){
+						printf("Success.");
+						successfulShot++;
+					}else
+						printf("Failed.");
 				}
-				
 				printf("\n");
 				break;
-				
+
 			default:
-				// Menüde olmayan seçim yapýlýrsa
-				break; // Döngü baþa döner
+				break;
 		}
-		printf("\n--- Basarili Atis: %d --- \n", basariliAtis);
+		printf("\n--- Successful Shots: %d --- \n", successfulShot);
 	}
 }
