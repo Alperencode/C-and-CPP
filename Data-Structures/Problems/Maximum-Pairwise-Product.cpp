@@ -1,4 +1,4 @@
-// Didn't finished yet
+// Didn't finish yet
 #include <iostream>
 #include <cstdlib>
 #include <vector>
