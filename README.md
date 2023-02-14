@@ -1,19 +1,15 @@
-# C and C++
+# Repository Desctription
 
-## Repository Description 
+This repository contains my programs and projects written in C and C++ programming languages, organized into the following directories:
 
-There will be my C and C++ programs in this repository. I'll finish Data-Structures (C-C++) and OOP in C++ and at the same time or after finishing these essentials, I'll learn more advanced usages in C++ and C.
+- [C](https://github.com/Alperencode/C-and-CPP/tree/master/C): C files.
 
-<br>
+- [C++](https://github.com/Alperencode/C-and-CPP/tree/master/C%2B%2B): C++ files.
 
-<h3>
+- [Advanced-CPP](https://github.com/Alperencode/C-and-CPP/tree/master/Advanced-CPP): C++ files that use advanced concepts.
 
-- Currently
+- [Data-Structures](https://github.com/Alperencode/C-and-CPP/tree/master/Data-Structures): Files for various data structures in C and C++.
 
-    - OOP (done)
+- [OOP](https://github.com/Alperencode/C-and-CPP/tree/master/OOP): C++ files for Object-Oriented Programming.
 
-    - Data-Structures (ongoing)
-    
-    - Advanced C and C++ (ongoing)
-
-</h3>
+- [Projects](https://github.com/Alperencode/C-and-CPP/tree/master/Projects): Projects written in C and C++.
