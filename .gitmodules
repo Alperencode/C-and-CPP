@@ -1,3 +1,6 @@
 [submodule "Projects/Text-Editor"]
 	path = Projects/Text-Editor
 	url = https://github.com/Alperencode/Text-Editor.git
+[submodule "Projects/C-Shell"]
+	path = Projects/C-Shell
+	url = https://github.com/Alperencode/C-Shell.git
