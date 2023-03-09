@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using std::cout, std::endl;
 #define p(x) cout << x << endl;  // macro to print variables
 
 // call by value

@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using std::cout, std::endl, std::string;
 #define p(x) cout << x << endl;  // defining p(x) macro to print out variables
 
 class Dog{

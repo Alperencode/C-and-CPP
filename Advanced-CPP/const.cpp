@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 // const
 //     - A compile time constraint that an object can not be modified
