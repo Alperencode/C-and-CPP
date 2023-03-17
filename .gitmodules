@@ -4,3 +4,6 @@
 [submodule "Projects/C-Shell"]
 	path = Projects/C-Shell
 	url = https://github.com/Alperencode/C-Shell.git
+[submodule "Projects/Process-Manager"]
+	path = Projects/Process-Manager
+	url = https://github.com/alperencode/Process-Manager
