@@ -5,28 +5,31 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
-typedef struct p{
-    int pid;
-    pid_t pid1, pid2;
-}process;
+void createTree(int height){
 
-int main(){ 
+    pid_t pid = fork();
 
-    process *root;
-    root = (process*)malloc(sizeof(process));
+    if(pid != 0){
+        pid_t childPid = fork();
 
-    for(int i=0; i<2; i++){
+        if(childPid != 0){
+            // Parent process
+        }else{
+            // Right child
+        }
 
-        root->pid = getpid();
-        root->pid1 = fork();
-
-        if(root->pid1 != 0)
-            root->pid2 = fork();
-
+    }else{
+        // Left child
     }
 
-    wait(NULL);
-    printf("root pid: %d pid1: %d pid2: %d\n", root->pid, root->pid1, root->pid2);
+}
+
+int main(){ 
+   
+    createTree(4);
+
+    printf("Hello World\n");
+    return 0;
 }
 
 // using child's pid for create unique seed
