@@ -7,32 +7,39 @@
 
 void createTree(int height){
 
-    pid_t pid = fork();
+    if(height>0){
+        pid_t pid = fork();
+        if(pid>0){
+            pid_t childPid = fork();
 
-    if(pid != 0){
-        pid_t childPid = fork();
+            if(childPid != 0){
+                // Parent process
+            }else{
+                // Right child
+                createTree(--height);
+            }
 
-        if(childPid != 0){
-            // Parent process
         }else{
-            // Right child
+            // Left child
+            createTree(--height);
         }
-
     }else{
-        // Left child
+        // Leaf node
+        srand(getpid());
+        int random = (rand() % 101);
+
+        char fileName[20];
+        sprintf(fileName, "%d.txt", getpid());
+        FILE *fp = fopen(fileName, "w");
+
+        fprintf(fp, "%d", random);
     }
 
 }
 
 int main(){ 
    
-    createTree(4);
+    createTree(3);
 
-    printf("Hello World\n");
     return 0;
 }
-
-// using child's pid for create unique seed
-//    srand(getpid());
-//    int random = (rand() % 101);
-//    printf("%d\n", random);
