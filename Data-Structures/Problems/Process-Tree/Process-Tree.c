@@ -1,7 +1,6 @@
 // Didn't finished yet
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
@@ -18,7 +17,6 @@ void createTree(int height){
                 // Right child
                 createTree(--height);
             }
-
         }else{
             // Left child
             createTree(--height);
@@ -32,7 +30,8 @@ void createTree(int height){
         sprintf(fileName, "%d.txt", getpid());
         FILE *fp = fopen(fileName, "w");
 
-        fprintf(fp, "%d", random);
+        fprintf(fp, "%d\n", random);
+        fclose(fp);
     }
 
 }
