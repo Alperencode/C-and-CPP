@@ -1,1 +1,3 @@
-<img src="Process-Tree.PNG">
+<center>
+    <img src="Process-Tree.PNG">
+</center>
