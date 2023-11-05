@@ -84,6 +84,11 @@ void pushFront(int data){
 
 void pushBack(int data){
     // O(1) Operation with tail
+    if(tail == NULL){
+        pushFront(data);
+        return;
+    }
+
     node* temp = (node*)malloc(sizeof(node));
     temp->data = data;
     temp->next = NULL;
